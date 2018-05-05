@@ -1,1 +1,25 @@
+.container {
+  /* for preview */
+  /* border: 1px blue solid; */
+  /* end */
+  display: grid;
+  margin: 50px 0px 50px 0px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+  grid-gap: 10px 10px;
+  justify-content: center;
+  align-content: center;
+  min-width: 400px;
+}
 
+.result {
+  background-color: mintcream;
+}
+
+.number {
+  background-color: beige;
+}
+
+.sign {
+  background-color: mistyrose;
+}
