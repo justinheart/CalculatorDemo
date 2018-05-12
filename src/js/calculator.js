@@ -5,24 +5,12 @@ module.exports = class Calculator {
     this.currentType = false; // false: sign, true: number
   }
 
-  get countingSeq() {
-    return this.countingSeq;
-  }
-
-  get countingResult() {
-    return this.countingResult;
-  }
-
-  set currentType(type) {
-    this.currentType = type;
-  }
-
   isEqualToCurrentType(component) {
     let inputType = false;
-    if (component !== '+' || component !== '-' || component !== '×' || component !== '÷') {
-      inputType = true;
-    } else {
+    if (component === '+' || component === '-' || component === '×' || component === '÷') {
       inputType = false;
+    } else {
+      inputType = true;
     }
     return (inputType === this.currentType);
   }
