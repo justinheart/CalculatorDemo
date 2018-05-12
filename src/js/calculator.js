@@ -1,4 +1,4 @@
-class Calculator {
+module.exports = class Calculator {
   constructor() {
     this.countingSeq = [];
     this.countingResult = 0;
@@ -11,6 +11,10 @@ class Calculator {
 
   get countingResult() {
     return this.countingResult;
+  }
+
+  set currentType(type) {
+    this.currentType = type;
   }
 
   isEqualToCurrentType(component) {
